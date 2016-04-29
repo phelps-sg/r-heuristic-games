@@ -22,10 +22,19 @@ payoff.matrix.rps <- matrix( c(
 	1, 0, 1,  1,  0, -1),
 	    ncol = 6, byrow=T)
 
+# Encapsulate in a HeuristicGame object
+game.rps <- HeuristicGameFromPayoffMatrix(payoff.matrix.rps, strategies = c('R', 'P', 'S'))
+
+# Generate the initial values for the replicator dynamics ODE
 initial.values.random <- GenerateRandomInitialValues()
 
-game.rps <- HeuristicGameFromPayoffMatrix(payoff.matrix.rps, strategies = c('R', 'P', 'S'))
+# Integrate from t=0 to t=100 in steps of delta_t = 1/100
+times.rd <- seq(0, 100, by=0.01)
+
+# Integrate the replicator dynamics ODE for each initial value
 game.rps.analysed <- Analyse(game.rps, initial.values = initial.values.random, times = times.rd)
+
+# Plot the resulting phase-space
 plot(game.rps.analysed)
 ~~~
 
