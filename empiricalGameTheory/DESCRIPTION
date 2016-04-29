@@ -1,0 +1,10 @@
+Package: empiricalGameTheory
+Type: Package
+Title: Analyse heuristic payoff matrices under different dynamics
+Version: 1.0
+Date: 2016-04-29
+Author: Steve Phelps
+Maintainer: Steve Phelps <sphelps@sphelps.net>
+Description: none
+License: GNU General Public License Version 3.0
+Depends: deSolve, compiler, gtools, snow, snowfall
