@@ -13,7 +13,7 @@ R CMD INSTALL empiricalGameTheory
 
   library(empiricalGameTheory)
   # Payoff matrix for Rock, Paper, Scissors
-  payoff.matrix.rps <<- matrix( c(
+  payoff.matrix.rps <- matrix( c(
 	  0, 0, 2,  0,  0,  0,
 	  0, 1, 1,  0, -1,  1,
 	  2, 0, 0,  0,  0,  0,
@@ -24,8 +24,8 @@ R CMD INSTALL empiricalGameTheory
  
   initial.values.random <- GenerateRandomInitialValues()
 
-  game.rps <<- HeuristicGameFromPayoffMatrix(payoff.matrix.rps, strategies = c('R', 'P', 'S'))
-  game.rps.analysed <<- Analyse(game.rps, initial.values = initial.values.random, times = times.rd)
+  game.rps <- HeuristicGameFromPayoffMatrix(payoff.matrix.rps, strategies = c('R', 'P', 'S'))
+  game.rps.analysed <- Analyse(game.rps, initial.values = initial.values.random, times = times.rd)
   plot(game.rps.analysed)
 
 
