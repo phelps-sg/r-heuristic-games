@@ -29,6 +29,8 @@ game.rps.analysed <- Analyse(game.rps, initial.values = initial.values.random, t
 plot(game.rps.analysed)
 ~~~
 
+For a more complete example of analysing an actual agent-based model, see [this example](http://jasa.sourceforge.net/abm-dynamics-knitr.html) in which we analyse a financial market model implemented in the [JASA](http://jasa.sourceforge.net) framework.
+
 ## References
 
 Wellman, M. P. (2006). Methods for Empirical Game-Theoretic Analysis. In Twenty-First National Conference on Artificial Intelligence (AAAI-06) (pp. 1152–1155). Boston, Massachusetts.
