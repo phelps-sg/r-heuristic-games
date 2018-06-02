@@ -2,7 +2,7 @@
 Provides an R package called `empiricalGameTheory` for analysing heuristic games 
 using empirical game theory (Wellman 2006).  Heuristic payoff matrices
 can be encapsulated in a `HeuristicGame` object.  These can then
-be analysed as [evolutionary games](https://sphelps.net/teaching/egt.html)
+be analysed as [evolutionary games](http://sphelps.net/teaching/egt.html)
 by numerically integrating the replicator dynamics ODE for different
 initial conditions and then plotting the resulting trajectories in phase space.
 
